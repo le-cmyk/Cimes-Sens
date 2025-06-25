@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Savon Menthe Poivrée",
+    "description": "Un savon rafraîchissant à l'huile de menthe poivrée, parfait pour réveiller vos sens le matin.",
+    "ingredients": ["Huile d'olive", "Huile de coco", "Menthe poivrée", "Eau", "Soude"],
+    "price": "6.50",
+    "currency": "EUR",
+    "image": "assets/produits/savon-menthe.jpg",
+    "link": "https://buy.stripe.com/test_ABC123",
+    "category": "Savons"
+  },
+  {
+    "title": "Savon Lavande",
+    "description": "Savon apaisant à la lavande de Provence, idéal pour la détente et le sommeil.",
+    "ingredients": ["Huile d'olive", "Huile de coco", "Lavande", "Eau", "Soude"],
+    "price": "6.50",
+    "currency": "EUR",
+    "image": "assets/produits/savon-lavande.jpg",
+    "link": "https://buy.stripe.com/test_DEF456",
+    "category": "Savons"
+  },
+  {
+    "title": "Savon Rose Géranium",
+    "description": "Un savon floral délicat aux huiles essentielles de rose et géranium.",
+    "ingredients": ["Huile d'olive", "Huile de coco", "Rose géranium", "Eau", "Soude"],
+    "price": "7.00",
+    "currency": "EUR",
+    "image": "assets/produits/savon-rose.jpg",
+    "link": "https://buy.stripe.com/test_GHI789",
+    "category": "Savons"
+  },
+  {
+    "title": "Baume Réparateur",
+    "description": "Baume nourrissant à base de cire d'abeille et huiles végétales pour peaux sèches.",
+    "ingredients": ["Cire d'abeille", "Huile d'olive", "Huile d'amande douce", "Calendula"],
+    "price": "8.50",
+    "currency": "EUR",
+    "image": "assets/produits/baume-reparateur.jpg",
+    "link": "https://buy.stripe.com/test_JKL012",
+    "category": "Soins"
+  },
+  {
+    "title": "Shampoing Solide Ortie",
+    "description": "Shampoing solide fortifiant à l'ortie, parfait pour les cheveux gras.",
+    "ingredients": ["Huile de coco", "Beurre de karité", "Poudre d'ortie", "Huile essentielle de romarin"],
+    "price": "9.00",
+    "currency": "EUR",
+    "image": "assets/produits/shampoing-ortie.jpg",
+    "link": "https://buy.stripe.com/test_MNO345",
+    "category": "Soins"
+  },
+  {
+    "title": "Déodorant Naturel",
+    "description": "Déodorant solide naturel sans aluminium, efficace 24h.",
+    "ingredients": ["Bicarbonate de soude", "Amidon de maïs", "Huile de coco", "Palmarosa"],
+    "price": "7.50",
+    "currency": "EUR",
+    "image": "assets/produits/deodorant-naturel.jpg",
+    "link": "https://buy.stripe.com/test_PQR678",
+    "category": "Soins"
+  }
+]

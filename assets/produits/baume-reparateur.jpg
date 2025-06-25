@@ -1,0 +1,28 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="balmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#ffb347"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Pot de baume -->
+  <ellipse cx="200" cy="180" rx="60" ry="15" fill="#8b4513"/>
+  <rect x="140" y="120" width="120" height="60" fill="url(#balmGradient)" opacity="0.9"/>
+  <ellipse cx="200" cy="120" rx="60" ry="15" fill="#ffd700"/>
+  
+  <!-- Ombre -->
+  <ellipse cx="200" cy="200" rx="65" ry="10" fill="#000" opacity="0.1"/>
+  
+  <!-- Abeille stylisée -->
+  <ellipse cx="120" cy="80" rx="8" ry="5" fill="#ffd700"/>
+  <rect x="116" y="78" width="8" height="2" fill="#000"/>
+  <rect x="116" y="82" width="8" height="2" fill="#000"/>
+  
+  <!-- Texte -->
+  <text x="200" y="230" text-anchor="middle" font-family="Arial" font-size="16" fill="#6b705c">Baume Réparateur</text>
+  <text x="200" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#999">Nourrissant</text>
+</svg>

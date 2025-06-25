@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Ingrédients - Cimes & Sens</title>
+    <meta name="description" content="Découvrez tous les ingrédients naturels utilisés dans nos savons artisanaux. Transparence et qualité garanties.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TODO_GA4_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'TODO_GA4_ID');
+    </script>
+</head>
+<body style="font-family: var(--font-body);">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <!-- Top Banner -->
+        <div class="bg-gray-50 py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <!-- Social Links -->
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com/cimesetsens" target="_blank" class="hover:opacity-70">
+                        <img src="assets/icones/instagram.svg" alt="Instagram" class="w-5 h-5">
+                    </a>
+                    <a href="https://facebook.com/cimesetsens" target="_blank" class="hover:opacity-70">
+                        <img src="assets/icones/facebook.svg" alt="Facebook" class="w-5 h-5">
+                    </a>
+                </div>
+                
+                <!-- Account & Cart -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-sm text-gray-600 hover:text-gray-800">Mon compte</a>
+                    <a href="#" class="flex items-center text-sm text-gray-600 hover:text-gray-800">
+                        <img src="assets/icones/cart.svg" alt="Panier" class="w-5 h-5 mr-1">
+                        Panier (0)
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Header -->
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-center items-center">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Cimes & Sens" class="h-16">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="border-t border-gray-200">
+            <div class="container mx-auto px-4">
+                <ul class="flex justify-center space-x-8 py-4">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="esprit.html" class="nav-link">Notre Esprit</a></li>
+                    <li><a href="ingredients.html" class="nav-link font-semibold" style="color: var(--color-primary);">Nos Ingrédients</a></li>
+                    <li><a href="mentions.html" class="nav-link">Mentions légales</a></li>
+                    <li><a href="cgv.html" class="nav-link">CGV</a></li>
+                    <li><a href="confidentialite.html" class="nav-link">Confidentialité</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16" style="background-color: var(--color-secondary);">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="section-title">Nos Ingrédients</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Transparence totale sur la composition de nos produits. 
+                Découvrez tous les ingrédients naturels que nous utilisons dans nos créations artisanales.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products and Ingredients -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div id="products-ingredients" class="space-y-12">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Guide -->
+    <section class="py-16" style="background-color: var(--color-secondary);">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Guide des Ingrédients</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3" style="color: var(--color-primary); font-family: var(--font-title);">Huile d'Olive</h3>
+                    <p class="text-gray-600 text-sm">
+                        Base de nos savons, l'huile d'olive extra vierge nourrit et protège la peau 
+                        tout en apportant douceur et onctuosité.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3" style="color: var(--color-primary); font-family: var(--font-title);">Huile de Coco</h3>
+                    <p class="text-gray-600 text-sm">
+                        Crée une mousse généreuse et possède des propriétés nettoyantes naturelles. 
+                        Hydrate sans laisser de film gras.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3" style="color: var(--color-primary); font-family: var(--font-title);">Cire d'Abeille</h3>
+                    <p class="text-gray-600 text-sm">
+                        Forme une barrière protectrice naturelle sur la peau. 
+                        Provient de nos ruches locales, respectueuses des abeilles.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3" style="color: var(--color-primary); font-family: var(--font-title);">Huiles Essentielles</h3>
+                    <p class="text-gray-600 text-sm">
+                        100% pures et naturelles, elles apportent parfum et propriétés thérapeutiques. 
+                        Dosées avec précision pour respecter votre peau.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3" style="color: var(--color-primary); font-family: var(--font-title);">Plantes Séchées</h3>
+                    <p class="text-gray-600 text-sm">
+                        Récoltées à la main dans nos montagnes ou cultivées dans notre jardin. 
+                        Séchage naturel pour préserver toutes leurs vertus.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3" style="color: var(--color-primary); font-family: var(--font-title);">Soude Caustique</h3>
+                    <p class="text-gray-600 text-sm">
+                        Indispensable à la saponification. Totalement neutralisée lors du processus, 
+                        elle transforme les huiles en savon doux.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Commitment -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="section-title">Notre Engagement Qualité</h2>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--color-accent);">
+                            <span class="text-white text-3xl">🌱</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3" style="color: var(--color-primary); font-family: var(--font-title);">Ingrédients Biologiques</h3>
+                        <p class="text-gray-600">
+                            Nous privilégions les ingrédients issus de l'agriculture biologique, 
+                            certifiés par des organismes reconnus.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--color-accent);">
+                            <span class="text-white text-3xl">🔬</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3" style="color: var(--color-primary); font-family: var(--font-title);">Contrôle Qualité</h3>
+                        <p class="text-gray-600">
+                            Chaque lot est testé et contrôlé. Nous garantissons la traçabilité 
+                            complète de nos ingrédients.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold mb-4" style="color: var(--color-primary); font-family: var(--font-title);">
+                        Une Question sur nos Ingrédients ?
+                    </h3>
+                    <p class="text-gray-600 mb-6">
+                        N'hésitez pas à nous contacter pour toute question concernant 
+                        la composition de nos produits ou nos méthodes de fabrication.
+                    </p>
+                    <a href="mailto:contact@cimes-sens.fr" class="btn-primary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12" style="background-color: var(--color-primary); color: white;">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/logo.svg" alt="Cimes & Sens" class="h-12 mb-4 brightness-0 invert">
+                    <p class="text-sm opacity-80">
+                        Savonnerie paysanne artisanale au cœur des montagnes.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:opacity-70">Accueil</a></li>
+                        <li><a href="esprit.html" class="hover:opacity-70">Notre Esprit</a></li>
+                        <li><a href="ingredients.html" class="hover:opacity-70">Nos Ingrédients</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Légal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="mentions.html" class="hover:opacity-70">Mentions légales</a></li>
+                        <li><a href="cgv.html" class="hover:opacity-70">CGV</a></li>
+                        <li><a href="confidentialite.html" class="hover:opacity-70">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Nous suivre</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/cimesetsens" target="_blank" class="hover:opacity-70">
+                            <img src="assets/icones/instagram.svg" alt="Instagram" class="w-6 h-6 brightness-0 invert">
+                        </a>
+                        <a href="https://facebook.com/cimesetsens" target="_blank" class="hover:opacity-70">
+                            <img src="assets/icones/facebook.svg" alt="Facebook" class="w-6 h-6 brightness-0 invert">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>&copy; 2025 Cimes & Sens. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Load and display products with ingredients
+        async function loadProductsIngredients() {
+            try {
+                const response = await fetch('products.json');
+                const products = await response.json();
+                displayProductsIngredients(products);
+            } catch (error) {
+                console.error('Erreur lors du chargement des produits:', error);
+            }
+        }
+
+        // Display products with their ingredients
+        function displayProductsIngredients(products) {
+            const container = document.getElementById('products-ingredients');
+            
+            container.innerHTML = products.map(product => `
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="${product.image}" alt="${product.title}" 
+                                 class="w-full h-64 md:h-full object-cover">
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold mb-2" 
+                                        style="color: var(--color-primary); font-family: var(--font-title);">
+                                        ${product.title}
+                                    </h3>
+                                    <p class="text-gray-600 mb-4">${product.description}</p>
+                                </div>
+                                <span class="text-2xl font-bold ml-4" style="color: var(--color-accent);">
+                                    ${product.price}€
+                                </span>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-semibold mb-3 text-lg" style="color: var(--color-primary);">
+                                    Composition complète :
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    ${product.ingredients.map(ingredient => `
+                                        <span class="px-3 py-1 text-sm rounded-full border" 
+                                              style="border-color: var(--color-accent); color: var(--color-accent);">
+                                            ${ingredient}
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">
+                                    Catégorie: ${product.category}
+                                </span>
+                                <a href="${product.link}" target="_blank" 
+                                   class="btn-primary"
+                                   onclick="gtag('event', 'purchase_click', { 'product_name': '${product.title}' });">
+                                    Acheter ce produit
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProductsIngredients();
+        });
+    </script>
+</body>
+</html>

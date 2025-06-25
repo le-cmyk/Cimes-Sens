@@ -1,0 +1,25 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shampoingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#90ee90"/>
+      <stop offset="100%" style="stop-color:#228b22"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Shampoing solide -->
+  <circle cx="200" cy="140" r="50" fill="url(#shampoingGradient)" opacity="0.9"/>
+  
+  <!-- Ombre -->
+  <ellipse cx="200" cy="200" rx="55" ry="10" fill="#000" opacity="0.1"/>
+  
+  <!-- Feuilles d'ortie -->
+  <path d="M120 70 L130 50 L140 70 L135 80 L125 80 Z" fill="#006400"/>
+  <path d="M280 110 L290 90 L300 110 L295 120 L285 120 Z" fill="#006400"/>
+  
+  <!-- Texte -->
+  <text x="200" y="230" text-anchor="middle" font-family="Arial" font-size="16" fill="#6b705c">Shampoing Ortie</text>
+  <text x="200" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#999">Fortifiant</text>
+</svg>

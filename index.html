@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WSVT2QNW');</script>
+    <!-- End Google Tag Manager -->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cimes & Sens - Savonnerie Paysanne Artisanale</title>
@@ -16,17 +24,14 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=TODO_GA4_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'TODO_GA4_ID');
-    </script>
+
 </head>
 <body style="font-family: var(--font-body);">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSVT2QNW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <!-- Header -->
     <header class="bg-white shadow-sm">
         <!-- Main Header -->
@@ -206,18 +211,19 @@
         </div>
     </footer>
 
-    <!-- RGPD Cookie Banner (commented out by default) -->
-    <!--
+    <!-- RGPD Cookie Banner -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <p class="text-sm">
-                Nous utilisons des cookies pour améliorer votre expérience. 
+                Nous utilisons des cookies et Google Tag Manager pour analyser le trafic et améliorer votre expérience. 
                 <a href="confidentialite.html" class="underline">En savoir plus</a>
             </p>
-            <button id="accept-cookies" class="btn-primary text-sm px-4 py-2">Accepter</button>
+            <div class="flex gap-2">
+                <button id="accept-cookies" class="btn-primary text-sm px-4 py-2">Accepter</button>
+                <button id="refuse-cookies" class="bg-gray-500 text-white text-sm px-4 py-2 rounded hover:bg-gray-600">Refuser</button>
+            </div>
         </div>
     </div>
-    -->
 
     <!-- JavaScript -->
     <script>
@@ -304,11 +310,11 @@
             });
         }
 
-        // Cookie banner management (uncomment to activate)
-        /*
+        // Cookie banner management
         function initCookieBanner() {
             const banner = document.getElementById('cookie-banner');
             const acceptBtn = document.getElementById('accept-cookies');
+            const refuseBtn = document.getElementById('refuse-cookies');
             
             // Show banner if no consent stored
             if (!localStorage.getItem('cookie-consent')) {
@@ -318,14 +324,34 @@
             acceptBtn.addEventListener('click', () => {
                 localStorage.setItem('cookie-consent', 'accepted');
                 banner.classList.remove('show');
+                
+                // Enable Google Tag Manager tracking
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'cookie_consent_granted',
+                    'consent_analytics': true,
+                    'consent_marketing': true
+                });
+            });
+            
+            refuseBtn.addEventListener('click', () => {
+                localStorage.setItem('cookie-consent', 'refused');
+                banner.classList.remove('show');
+                
+                // Disable Google Tag Manager tracking
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'cookie_consent_denied',
+                    'consent_analytics': false,
+                    'consent_marketing': false
+                });
             });
         }
-        */
 
         // Initialize when page loads
         document.addEventListener('DOMContentLoaded', () => {
             loadProducts();
-            // initCookieBanner(); // Uncomment to activate cookie banner
+            initCookieBanner(); // Activate cookie banner
         });
 
         // Smooth scroll for anchor links

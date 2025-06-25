@@ -11,8 +11,15 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Cimes & Sens">
+    <meta name="keywords" content="savon artisanal, savonnerie, naturel, bio, montagne, Provence, huile olive">
     <title>Cimes & Sens - Savonnerie Paysanne Artisanale</title>
     <meta name="description" content="Découvrez nos savons artisanaux naturels fabriqués dans nos montagnes. Produits bio, savoir-faire traditionnel.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAHpQTFRF////a3BcbXBebnFfb3JgcHNhcXRicnVjc3ZkdHdldnlmeXxpfH9sgIRvhYhyiYx1jI52kJN5lpqAnqKHo6aMpqiOpquPp6yQqK2RqKySqa6Tq7CUrbGVr7OXsLSYsraZs7ebtLibtrmct7qdubufvL6hwcOkxsiqzM2vzc+w0dK0////5+ULNQAAAB90Uk5TABAgMEBQYHCAj5+vv8/f7//P3+/f7//v7//v7+/v7//v9+/3AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAAYAAAAGAA8GtCzwAAAAd0SU1FB+cGGhQrHjOo7PUAAAC8SURBVDjLpZPZDoIwDIUrKIJ7XHBBxQX3fd//zWyBjnYMjSb+aXPOl7RNy/9EjDGGMcYYY4wx/gPGGGOMMcYYY4z/gDHGGGOMMcYY4z9gjDHGGGOMMcb4DxhjjDHGGGOM8R8wxhhjjDHGGOP/xhhjjDHGGGP8B4wxxhhjjDHG+A8YY4wxxhhjjP8bY4wxxhhjjPEfMMYYY4wxxhj/AWOMMCYY4z9gjDHGGGOMMf4DxhhjjDHGGOM/YIwxxhhjjDH+A8YYY4wxDR3IpckP6HXRAAAAAElFTkSuQmCC">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +28,20 @@
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configure Tailwind to remove production warning
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6b705c',
+                        secondary: '#ffe8d6', 
+                        accent: '#cb997e',
+                    }
+                }
+            }
+        }
+    </script>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -235,11 +256,18 @@
         async function loadProducts() {
             try {
                 const response = await fetch('products.json');
-                allProducts = await response.json();
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                allProducts = data;
                 displayProducts();
                 generateCategoryFilters();
             } catch (error) {
                 console.error('Erreur lors du chargement des produits:', error);
+                // Fallback: show a message if products can't be loaded
+                const grid = document.getElementById('products-grid');
+                grid.innerHTML = '<div class="col-span-full text-center text-gray-600"><p>Désolé, les produits ne peuvent pas être chargés pour le moment.</p></div>';
             }
         }
 

@@ -255,9 +255,9 @@
                 displayProductsIngredients(products);
             } catch (error) {
                 console.error('Erreur lors du chargement des produits:', error);
-                container.innerHTML = '<div class="text-center text-gray-600">\n' +
-                    '    <p>Désolé, les produits ne peuvent pas être chargés pour le moment.</p>\n' +
-                    '</div>';
+                const container = document.getElementById('products-ingredients');
+                container.innerHTML = '<div class="text-center text-gray-600"><p>Désolé, les produits ne peuvent pas être chargés pour le moment.</p></div>';
+
             }
         }
 

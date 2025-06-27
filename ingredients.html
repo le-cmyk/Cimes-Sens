@@ -245,6 +245,7 @@
     <script>
         // Load and display products with ingredients
         async function loadProductsIngredients() {
+            const container = document.getElementById('products-ingredients');
             try {
                 const response = await fetch('products.json');
                 if (!response.ok) {
@@ -256,6 +257,7 @@
                 console.error('Erreur lors du chargement des produits:', error);
                 const container = document.getElementById('products-ingredients');
                 container.innerHTML = '<div class="text-center text-gray-600"><p>Désolé, les produits ne peuvent pas être chargés pour le moment.</p></div>';
+
             }
         }
 

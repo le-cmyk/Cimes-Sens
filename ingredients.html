@@ -245,12 +245,19 @@
     <script>
         // Load and display products with ingredients
         async function loadProductsIngredients() {
+            const container = document.getElementById('products-ingredients');
             try {
                 const response = await fetch('products.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
                 const products = await response.json();
                 displayProductsIngredients(products);
             } catch (error) {
                 console.error('Erreur lors du chargement des produits:', error);
+                container.innerHTML = '<div class="text-center text-gray-600">\n' +
+                    '    <p>Désolé, les produits ne peuvent pas être chargés pour le moment.</p>\n' +
+                    '</div>';
             }
         }
 

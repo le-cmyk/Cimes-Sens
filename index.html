@@ -284,14 +284,18 @@
         // Display products
         function displayProducts() {
             const grid = document.getElementById('products-grid');
-            const productsToShow = currentCategory === 'all' 
-                ? allProducts 
+            const productsToShow = currentCategory === 'all'
+                ? allProducts
                 : allProducts.filter(product => product.category === currentCategory);
+            if (productsToShow.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center text-gray-600">Aucun produit disponible dans cette catégorie.</div>';
+                return;
+            }
 
             grid.innerHTML = productsToShow.map(product => `
                 <div class="product-card">
                     <div class="aspect-w-4 aspect-h-3">
-                        <img src="${product.image}" alt="${product.title}" 
+                        <img src="${product.image}" alt="${product.title}"
                              class="w-full h-64 object-cover">
                     </div>
                     <div class="p-6">

@@ -92,8 +92,9 @@
 }
 
 @media (max-width: 768px) {
+  /* Keep header elements on a single row and rely on the burger menu */
   header .container > div {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
   }
   

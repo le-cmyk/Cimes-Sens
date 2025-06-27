@@ -63,8 +63,13 @@
                     </a>
                 </div>
                 
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden text-primary focus:outline-none">
+                    <img src="assets/icones/menu.svg" alt="Menu" class="w-6 h-6">
+                </button>
+
                 <!-- Navigation -->
-                <nav>
+                <nav id="nav-menu" class="hidden md:block">
                     <ul class="flex space-x-6">
                         <li><a href="index.html" class="nav-link">Accueil</a></li>
                         <li><a href="esprit.html" class="nav-link">Notre Esprit</a></li>
@@ -275,6 +280,17 @@
                 <p>&copy; 2025 Cimes & Sens. Tous droits réservés.</p>
             </div>
         </div>
-    </footer>
+</footer>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
 </html>

@@ -1,10 +1,10 @@
 /* Variables CSS personnalisables */
 :root {
-  --color-primary: #6b705c;    /* Vert sauge principal */
-  --color-secondary: #ffe8d6;  /* Beige clair */
-  --color-accent: #cb997e;     /* Terracotta */
-  --font-title: 'Playfair Display', serif;  /* Police des titres */
-  --font-body: 'Inter', sans-serif;         /* Police du texte */
+  --color-primary: #436850;    /* Vert profond modernisé */
+  --color-secondary: #f4f7f5;  /* Gris très clair */
+  --color-accent: #e08e79;     /* Corail doux */
+  --font-title: 'Merriweather', serif;  /* Police des titres */
+  --font-body: 'Open Sans', sans-serif;  /* Police du texte */
 }
 
 /* Styles de base */
@@ -29,9 +29,9 @@
 }
 
 .btn-primary:hover {
-  background-color: #5a5f4a;
+  background-color: var(--color-accent);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(107, 112, 92, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .nav-link {
@@ -44,8 +44,8 @@
 }
 
 .nav-link:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  background-color: var(--color-accent);
+  color: white;
 }
 
 .product-card {
@@ -62,8 +62,8 @@
 }
 
 .hero-section {
-  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
-  min-height: 70vh;
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  min-height: 75vh;
 }
 
 .cookie-banner {

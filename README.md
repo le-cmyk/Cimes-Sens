@@ -28,11 +28,9 @@ Un mini-site statique pour la marque « Cimes & Sens », savonnerie paysanne, op
 ├─ index.html            # Page d'accueil + boutique dynamique
 ├─ esprit.html           # Page éditoriale "Notre esprit"
 ├─ ingredients.html      # Liste des ingrédients (dynamique)
-├─ mentions.html         # Mentions légales
-├─ cgv.html             # Conditions générales de vente
-├─ confidentialite.html  # Politique de confidentialité
+├─ a-propos.html         # À propos, mentions légales et CGV simplifiées
 ├─ products.json         # Base de données produits (sans commentaires)
-├─ style.css            # Variables CSS personnalisables
+├─ style.css             # Variables CSS personnalisables
 └─ assets/
    ├─ logo.svg          # Logo de la marque
    ├─ icones/           # Icônes réseaux sociaux et interface

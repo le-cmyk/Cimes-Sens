@@ -11,7 +11,7 @@ Tu dois livrer un mini-site statique (GitHub Pages) pour la marque « Cimes & Se
 — Bandeau haut : logo centré, réseaux sociaux à gauche, compte + panier à droite.  
 — Barre de navigation sous le bandeau.  
 — Page d’accueil (index.html) : hero + boutique + mini-section “Esprit” + “Où nous trouver”.  
-— Autres pages : esprit.html, ingredients.html, mentions.html, cgv.html, confidentialite.html.  
+— Autres pages : esprit.html, ingredients.html, a-propos.html.  
 (!) La boutique doit apparaître **directement sur la home**.  
 (!) On conserve les autres pages pour le SEO / contenu éditorial.
 
@@ -70,9 +70,7 @@ Boutons : fond --color-primary, texte blanc.
 ├─ index.html            # landing + boutique dynamique
 ├─ esprit.html           # page éditoriale longue
 ├─ ingredients.html      # liste ingrédients (dynamique depuis JSON)
-├─ mentions.html
-├─ cgv.html
-├─ confidentialite.html
+├─ a-propos.html          # page À propos simplifiée
 ├─ products.json         # SANS commentaire, conforme au schéma ci-dessus
 ├─ style.css
 └─ assets/

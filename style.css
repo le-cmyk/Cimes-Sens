@@ -83,6 +83,29 @@
   transform: translateY(0);
 }
 
+/* Styles pour les filtres de catégories */
+.category-filter {
+  background-color: white;
+  color: var(--color-primary);
+  border-color: var(--color-accent);
+}
+
+.category-filter:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-accent);
+}
+
+.category-filter.active {
+  background-color: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+
+.category-filter.active:hover {
+  background-color: #b8896b;
+  border-color: #b8896b;
+}
+
 /* Navigation responsive */
 @media (max-width: 1024px) {
   .nav-link {

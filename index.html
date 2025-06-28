@@ -144,7 +144,7 @@
             <!-- Filters -->
             <div class="flex justify-center mb-8">
                 <div id="category-filters" class="flex flex-wrap justify-center gap-2">
-                    <button class="category-filter active px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-100 transition-colors" data-category="all">
+                    <button class="category-filter active px-4 py-2 rounded-full border transition-colors" data-category="all">
                         Tous les produits
                     </button>
                 </div>
@@ -344,14 +344,14 @@
             
             // Keep "Tous les produits" button and add categories
             const categoryButtons = categories.map(category => `
-                <button class="category-filter px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-100 transition-colors" 
+                <button class="category-filter px-4 py-2 rounded-full border transition-colors" 
                         data-category="${category}">
                     ${category}
                 </button>
             `).join('');
             
             filtersContainer.innerHTML = `
-                <button class="category-filter active px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-100 transition-colors" data-category="all">
+                <button class="category-filter active px-4 py-2 rounded-full border transition-colors" data-category="all">
                     Tous les produits
                 </button>
                 ${categoryButtons}

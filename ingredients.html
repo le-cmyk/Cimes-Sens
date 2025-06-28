@@ -50,7 +50,7 @@
     
     <style>
         .product-card {
-            height: 400px;
+            min-height: 400px;
             display: flex;
             flex-direction: column;
         }
@@ -172,6 +172,15 @@
     <!-- Products and Ingredients -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
+            <!-- Filters -->
+            <div class="flex justify-center mb-8">
+                <div id="category-filters" class="flex flex-wrap justify-center gap-2">
+                    <button class="category-filter active px-4 py-2 rounded-full border transition-colors" data-category="all">
+                        Tous les produits
+                    </button>
+                </div>
+            </div>
+            
             <div id="products-ingredients" class="space-y-12">
                 <!-- Products will be loaded here by JavaScript -->
             </div>
@@ -321,6 +330,9 @@
 
     <!-- JavaScript -->
     <script>
+        let allProducts = [];
+        let currentCategory = 'all';
+
         // Load and display products with ingredients
         async function loadProductsIngredients() {
             const container = document.getElementById('products-ingredients');
@@ -329,61 +341,95 @@
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                const products = await response.json();
-                displayProductsIngredients(products);
+                allProducts = await response.json();
+                generateCategoryFilters();
+                displayProductsIngredients();
             } catch (error) {
                 console.error('Erreur lors du chargement des produits:', error);
                 const container = document.getElementById('products-ingredients');
                 container.innerHTML = '<div class="text-center text-gray-600"><p>Désolé, les produits ne peuvent pas être chargés pour le moment.</p></div>';
-
             }
         }
 
+        // Generate category filters
+        function generateCategoryFilters() {
+            const categories = [...new Set(allProducts.map(product => product.category))];
+            const filtersContainer = document.getElementById('category-filters');
+            
+            // Keep "Tous les produits" button and add categories
+            const categoryButtons = categories.map(category => `
+                <button class="category-filter px-4 py-2 rounded-full border transition-colors" 
+                        data-category="${category}">
+                    ${category}
+                </button>
+            `).join('');
+            
+            filtersContainer.innerHTML = `
+                <button class="category-filter active px-4 py-2 rounded-full border transition-colors" data-category="all">
+                    Tous les produits
+                </button>
+                ${categoryButtons}
+            `;
+
+            // Add event listeners
+            document.querySelectorAll('.category-filter').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.category-filter').forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    e.target.classList.add('active');
+                    
+                    currentCategory = e.target.dataset.category;
+                    displayProductsIngredients();
+                });
+            });
+        }
+
         // Display products with their ingredients
-        function displayProductsIngredients(products) {
+        function displayProductsIngredients() {
             const container = document.getElementById('products-ingredients');
             
-            container.innerHTML = products.map(product => `
+            const productsToShow = currentCategory === 'all' 
+                ? allProducts 
+                : allProducts.filter(product => product.category === currentCategory);
+            
+            container.innerHTML = productsToShow.map(product => `
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden product-card">
                     <div class="product-image-container">
                         <img src="${product.image}" alt="${product.title}" 
                              class="product-image">
                     </div>
                     <div class="product-content">
-                        <div class="flex justify-between items-start mb-4">
+                        <div class="flex justify-between items-start mb-3">
                             <div class="flex-1">
-                                <h3 class="text-2xl font-semibold mb-2" 
+                                <h3 class="text-xl md:text-2xl font-semibold mb-2" 
                                     style="color: var(--color-primary); font-family: var(--font-title);">
                                     ${product.title}
                                 </h3>
-                                <p class="text-gray-600 mb-4 text-sm">${product.description}</p>
+                                <p class="text-gray-600 mb-3 text-sm leading-tight">${product.description}</p>
                             </div>
-                            <span class="text-xl font-bold ml-4 flex-shrink-0" style="color: var(--color-accent);">
+                            <span class="text-lg md:text-xl font-bold ml-3 flex-shrink-0" style="color: var(--color-accent);">
                                 ${product.price}€
                             </span>
                         </div>
                         
-                        <div class="mb-4 flex-1">
-                            <h4 class="font-semibold mb-2 text-base" style="color: var(--color-primary);">
+                        <div class="mb-3 flex-1">
+                            <h4 class="font-semibold mb-2 text-sm md:text-base" style="color: var(--color-primary);">
                                 Composition :
                             </h4>
                             <div class="flex flex-wrap gap-1">
-                                ${product.ingredients.slice(0, 6).map(ingredient => `
-                                    <span class="px-2 py-1 text-xs rounded-full border" 
+                                ${product.ingredients.map(ingredient => `
+                                    <span class="px-2 py-1 text-xs rounded-full border text-center" 
                                           style="border-color: var(--color-accent); color: var(--color-accent);">
                                         ${ingredient}
                                     </span>
                                 `).join('')}
-                                ${product.ingredients.length > 6 ? `<span class="text-xs text-gray-500 px-2 py-1">+${product.ingredients.length - 6} autres</span>` : ''}
                             </div>
                         </div>
                         
-                        <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xs text-gray-500">
-                                ${product.category}
-                            </span>
+                        <div class="flex items-center justify-end mt-auto">
                             <a href="${product.link}" target="_blank" 
-                               class="btn-primary text-sm px-4 py-2"
+                               class="btn-primary text-sm px-3 md:px-4 py-2"
                                onclick="gtag('event', 'purchase_click', { 'product_name': '${product.title}' });">
                                 Acheter
                             </a>

@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Cimes & Sens">
-    <meta name="keywords" content="savon artisanal, savonnerie, naturel, bio, montagne, Provence, huile olive">
+    <meta name="keywords" content="savon artisanal, cosmétique naturelle, savons bio, produits de la ferme, montagne, Provence">
     <title>Cimes & Sens - Savonnerie Paysanne Artisanale</title>
     <meta name="description" content="Découvrez nos savons artisanaux naturels fabriqués dans nos montagnes. Produits bio, savoir-faire traditionnel.">
     <link rel="canonical" href="https://le-cmyk.github.io/Cimes-Sens/index.html">
@@ -22,6 +22,8 @@
     <meta property="og:image" content="https://le-cmyk.github.io/Cimes-Sens/assets/images/hero-bg.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://le-cmyk.github.io/Cimes-Sens/index.html">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -30,7 +32,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -40,9 +42,9 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#436850',
-                        secondary: '#f4f7f5',
-                        accent: '#e08e79',
+                        primary: '#0e7c7b',
+                        secondary: '#faf5e4',
+                        accent: '#dc5f00',
                     }
                 }
             }
@@ -99,7 +101,7 @@
                 <!-- Navigation -->
                 <nav id="nav-menu" class="hidden md:block">
                     <ul class="flex space-x-6">
-                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="index.html" class="nav-link active">Accueil</a></li>
                         <li><a href="esprit.html" class="nav-link">Notre Esprit</a></li>
                         <li><a href="ingredients.html" class="nav-link">Nos Ingrédients</a></li>
                         <li><a href="a-propos.html" class="nav-link">À propos</a></li>
@@ -110,9 +112,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section flex items-center justify-center text-center text-white relative overflow-hidden" style="background-image: url('assets/images/hero-bg.jpg'); background-size: cover; background-position: center;">
-        <div class="absolute inset-0" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));"></div>
-        <div class="relative z-10 max-w-4xl mx-auto px-4">
+    <section class="hero-section flex items-center justify-center text-center" style="background-image: url('assets/images/hero-bg.jpg');">
+        <div class="overlay"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 py-20">
             <h1 class="section-title text-white text-5xl md:text-6xl mb-6">Cimes & Sens</h1>
             <p class="text-xl md:text-2xl mb-8 opacity-90">Savonnerie paysanne artisanale</p>
             <p class="text-lg mb-8 max-w-2xl mx-auto opacity-80">

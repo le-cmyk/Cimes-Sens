@@ -13,17 +13,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Ingrédients - Cimes & Sens</title>
     <meta name="description" content="Découvrez tous les ingrédients naturels utilisés dans nos savons artisanaux. Transparence et qualité garanties.">
+    <meta name="keywords" content="savons naturels, composition, huiles essentielles, plantes de montagne, fabrication artisanale">
     <link rel="canonical" href="https://le-cmyk.github.io/Cimes-Sens/ingredients.html">
     <meta property="og:title" content="Nos Ingrédients - Cimes & Sens">
     <meta property="og:description" content="Découvrez tous les ingrédients naturels utilisés dans nos savons artisanaux. Transparence et qualité garanties.">
     <meta property="og:image" content="https://le-cmyk.github.io/Cimes-Sens/assets/images/hero-bg.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://le-cmyk.github.io/Cimes-Sens/ingredients.html">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,9 +35,9 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#436850',
-                        secondary: '#f4f7f5',
-                        accent: '#e08e79',
+                        primary: '#0e7c7b',
+                        secondary: '#faf5e4',
+                        accent: '#dc5f00',
                     }
                 }
             }
@@ -92,7 +95,7 @@
                     <ul class="flex space-x-6">
                         <li><a href="index.html" class="nav-link">Accueil</a></li>
                         <li><a href="esprit.html" class="nav-link">Notre Esprit</a></li>
-                        <li><a href="ingredients.html" class="nav-link font-semibold" style="color: var(--color-primary);">Nos Ingrédients</a></li>
+                        <li><a href="ingredients.html" class="nav-link active">Nos Ingrédients</a></li>
                         <li><a href="a-propos.html" class="nav-link">À propos</a></li>
                     </ul>
                 </nav>
@@ -101,11 +104,12 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="py-16" style="background-color: var(--color-secondary);">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="section-title">Nos Ingrédients</h1>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                Transparence totale sur la composition de nos produits. 
+    <section class="hero-section flex items-center justify-center text-center" style="background-image: url('assets/images/hero-bg.jpg');">
+        <div class="overlay"></div>
+        <div class="relative z-10 container mx-auto px-4 py-20">
+            <h1 class="section-title text-white">Nos Ingrédients</h1>
+            <p class="text-lg text-white opacity-90 max-w-3xl mx-auto">
+                Transparence totale sur la composition de nos produits.
                 Découvrez tous les ingrédients naturels que nous utilisons dans nos créations artisanales.
             </p>
         </div>

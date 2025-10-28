@@ -1,8 +1,8 @@
 /* Variables CSS personnalisables */
 :root {
-  --color-primary: #6b705c;    /* Vert sauge principal */
-  --color-secondary: #ffe8d6;  /* Beige clair */
-  --color-accent: #cb997e;     /* Terracotta */
+  --color-primary: #98bba9;    /* Vert sauge principal */
+  --color-secondary: #f4f1eb;  /* Beige clair */
+  --color-accent: #142e3b;     /* Bleu gunmetal */
   --font-title: 'Playfair Display', serif;  /* Police des titres */
   --font-body: 'Inter', sans-serif;         /* Police du texte */
 }

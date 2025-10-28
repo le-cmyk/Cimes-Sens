@@ -1,6 +1,6 @@
 # Cimes & Sens - Savonnerie Paysanne
 
-Un mini-site statique pour la marque « Cimes & Sens », savonnerie paysanne, optimisé pour GitHub Pages.
+Un  mini-site statique pour la marque « Cimes & Sens », savonnerie paysanne, optimisé pour GitHub Pages.
 
 ## 🚀 Déploiement sur GitHub Pages
 

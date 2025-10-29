@@ -3,8 +3,8 @@
   --color-primary: #98bba9;    /* Vert sauge principal */
   --color-secondary: #f4f1eb;  /* Beige clair */
   --color-accent: #c97431;     /* Orange */
-  --font-title: 'Playfair Display', annapurna sil;  /* Police des titres */
-  --font-body: 'Inter', oleo script;         /* Police du texte */
+  --font-title: 'annapurna sil', annapurna sil;  /* Police des titres */
+  --font-body: 'oleo script', oleo script;         /* Police du texte */
 }
 
 /* Styles de base */

@@ -1,9 +1,9 @@
 [
   {
-    "title": "Savon Menthe Poivrée",
-    "description": "Un savon rafraîchissant à l'huile de menthe poivrée, parfait pour réveiller vos sens le matin.",
-    "ingredients": ["Huile d'olive", "Huile de coco", "Menthe poivrée", "Eau", "Soude"],
-    "price": "6.50",
+    "title": "Savon Lever de Soleil – Douceur & Éclat ",
+    "description": "Commencez la journée avec douceur grâce à notre savon "Lever de Soleil", un soin naturel et apaisant grâce à l'argile rose et l'huile de chanvre, pensé pour révéler l’éclat naturel de votre peau. Un véritable moment de bien-être, comme un lever de soleil sur votre routine.",
+    "ingredients": ["Beurre de karité","Huile de coco","Huile d'olive","Huile de colza","Huile de chanvre","Argile rose","Fleurs d'hibiscus"],
+    "price": "6",
     "currency": "EUR",
     "image": "assets/produits/savon-menthe.jpg",
     "link": "https://buy.stripe.com/test_ABC123",

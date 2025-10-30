@@ -20,10 +20,10 @@
     "category": "Savons"
   },
   {
-    "title": "Savon Rose Géranium",
-    "description": "Un savon floral délicat aux huiles essentielles de rose et géranium.",
-    "ingredients": ["Huile d'olive", "Huile de coco", "Rose géranium", "Eau", "Soude"],
-    "price": "7.00",
+    "title": "Savon Jardin de Campagne – Éclat & Sérénité",
+    "description": "Un souffle de nature, un parfum de fleurs fraîches au petit matin... Jardin de Campagne est un savon artisanal saponifié à froid, pensé pour réveiller la peau et l’esprit en douceur. Sa formule florale et équilibrée, enrichie en macérat de calendula et huiles essentielles naturelles, prend soin de toutes les peaux, même délicates.",
+    "ingredients": ["Huile de coco", "Beurre de karité", "Huile d’olive", "Huile de tournesol oléique", "Macérat de fleurs de calendula dans huile de tournesol", "Huile de ricin", "Curcuma", "Huiles essentielles de listée citronnée & patchouli", "Fleurs de calendula séchées"],
+    "price": "6.00",
     "currency": "EUR",
     "image": "assets/produits/savon-rose.jpg",
     "link": "https://buy.stripe.com/test_GHI789",

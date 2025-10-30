@@ -3,7 +3,7 @@
     "title": "Savon Lever de Soleil – Douceur & Éclat ",
     "description": "Commencez la journée avec douceur grâce à notre savon Lever de Soleil, un soin naturel et apaisant grâce à l'argile rose et l'huile de chanvre, pensé pour révéler l’éclat naturel de votre peau. Un véritable moment de bien-être, comme un lever de soleil sur votre routine.",
     "ingredients": ["Beurre de karité","Huile de coco","Huile d'olive","Huile de colza","Huile de chanvre","Argile rose","Fleurs d'hibiscus"],
-    "price": "6",
+    "price": "6.00",
     "currency": "EUR",
     "image": "assets/produits/savon-menthe.jpg",
     "link": "https://buy.stripe.com/test_ABC123",
@@ -13,7 +13,7 @@
     "title": "Savon Randonnée dans les Alpages – Douceur & Protection",
     "description": "Un savon comme une escapade en pleine nature : Randonnée dans les Alpages est un hommage à la richesse du terroir et à la douceur des soins d’antan. Fabriqué en saponification à froid, il marie les vertus du lait de chèvre aux bienfaits d’huiles végétales soigneusement sélectionnées, pour offrir un moment de confort et de sérénité à toutes les peaux, même les plus sensibles.",
     "ingredients": ["Cire d’abeille", "Huile de coco", "Beurre de karité", "Huile d’olive", "Huile de tournesol oléique", "Lait de chèvre", "Fleurs de sureau"],
-    "price": "6",
+    "price": "6.00",
     "currency": "EUR",
     "image": "assets/produits/savon-lavande.jpg",
     "link": "https://buy.stripe.com/test_DEF456",
@@ -30,33 +30,25 @@
     "category": "Savons"
   },
   {
-    "title": "Baume Réparateur",
-    "description": "Baume nourrissant à base de cire d'abeille et huiles végétales pour peaux sèches.",
-    "ingredients": ["Cire d'abeille", "Huile d'olive", "Huile d'amande douce", "Calendula"],
-    "price": "8.50",
+    "title": "Savon Après une pluie d’orage - Purifiant & Réparateur",
+    "description": "Laissez-vous envelopper par la fraîcheur d’un matin après l’orage…
+Ce savon artisanal, à la mousse douce et veloutée, nettoie en profondeur tout en respectant l’équilibre naturel de la peau. Chaque ingrédient a été choisi pour ses vertus purifiantes, réparatrices et nourrissantes — une véritable caresse pour le corps et l’esprit.",
+    "ingredients": ["Cire d'abeille", "Huile de coco", "Beurre de karité", "Huile de tournesol oléique", "Huile de nigelle", "Charbon actif", "Oxyde de zinc", "Huiles essentielles de géranium rosat, romarin & ylang-ylang"],
+    "price": "6.00",
     "currency": "EUR",
     "image": "assets/produits/baume-reparateur.jpg",
     "link": "https://buy.stripe.com/test_JKL012",
-    "category": "Soins"
+    "category": "Savon"
   },
   {
-    "title": "Shampoing Solide Ortie",
-    "description": "Shampoing solide fortifiant à l'ortie, parfait pour les cheveux gras.",
-    "ingredients": ["Huile de coco", "Beurre de karité", "Poudre d'ortie", "Huile essentielle de romarin"],
-    "price": "9.00",
+    "title": "Savon Secret de la Reine - Protecteur & Réparateur",
+    "description": "Inspiré des trésors de la ruche, Secret de la Reine est formulé pour offrir un soin intensément nourrissant, réparateur et apaisant. Riche en miel, cire d’abeille et beurres végétaux, il enveloppe la peau d’un voile de douceur et de protection.",
+    "ingredients": ["Cire d'abeille", "Huile de coco", "Beurre de karité", "Huile d'olive", "Huile de tournesol oléique", "Huile de colza", "Miel"],
+    "price": "6.00",
     "currency": "EUR",
     "image": "assets/produits/shampoing-ortie.jpg",
     "link": "https://buy.stripe.com/test_MNO345",
-    "category": "Soins"
+    "category": "Savon"
   },
-  {
-    "title": "Déodorant Naturel",
-    "description": "Déodorant solide naturel sans aluminium, efficace 24h.",
-    "ingredients": ["Bicarbonate de soude", "Amidon de maïs", "Huile de coco", "Palmarosa"],
-    "price": "7.50",
-    "currency": "EUR",
-    "image": "assets/produits/deodorant-naturel.jpg",
-    "link": "https://buy.stripe.com/test_PQR678",
-    "category": "Soins"
-  }
+
 ]

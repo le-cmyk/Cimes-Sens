@@ -7,7 +7,7 @@
     "currency": "EUR",
     "image": "assets/produits/savon-menthe.jpg",
     "link": "https://buy.stripe.com/test_ABC123",
-    "category": "Savons"
+    "category": "Savons sans huiles essentielles"
   },
   {
     "title": "Savon Randonnée dans les Alpages – Douceur & Protection",
@@ -17,7 +17,7 @@
     "currency": "EUR",
     "image": "assets/produits/savon-lavande.jpg",
     "link": "https://buy.stripe.com/test_DEF456",
-    "category": "Savons"
+    "category": "Savons sans huiles essentielles"
   },
   {
     "title": "Savon Jardin de Campagne – Éclat & Sérénité",
@@ -27,7 +27,7 @@
     "currency": "EUR",
     "image": "assets/produits/savon-rose.jpg",
     "link": "https://buy.stripe.com/test_GHI789",
-    "category": "Savons"
+    "category": "Savons avec huiles essentielles"
   },
   {
     "title": "Savon Après une pluie d’orage - Purifiant & Réparateur",
@@ -37,7 +37,7 @@
     "currency": "EUR",
     "image": "assets/produits/baume-reparateur.jpg",
     "link": "https://buy.stripe.com/test_JKL012",
-    "category": "Savon"
+    "category": "Savons avec huiles essentielles"
   },
   {
     "title": "Savon Secret de la Reine - Protecteur & Réparateur",
@@ -47,6 +47,6 @@
     "currency": "EUR",
     "image": "assets/produits/shampoing-ortie.jpg",
     "link": "https://buy.stripe.com/test_MNO345",
-    "category": "Savon"
+    "category": "Savons sans huiles essentielles"
   }
 ]

@@ -10,10 +10,10 @@
     "category": "Savons"
   },
   {
-    "title": "Savon Lavande",
-    "description": "Savon apaisant à la lavande de Provence, idéal pour la détente et le sommeil.",
-    "ingredients": ["Huile d'olive", "Huile de coco", "Lavande", "Eau", "Soude"],
-    "price": "6.50",
+    "title": "Savon Randonnée dans les Alpages – Douceur & Protection",
+    "description": "Un savon comme une escapade en pleine nature : "Randonnée dans les Alpages" est un hommage à la richesse du terroir et à la douceur des soins d’antan. Fabriqué en saponification à froid, il marie les vertus du lait de chèvre aux bienfaits d’huiles végétales soigneusement sélectionnées, pour offrir un moment de confort et de sérénité à toutes les peaux, même les plus sensibles.",
+    "ingredients": ["Cire d’abeille", "Huile de coco", "Beurre de karité", "Huile d’olive", "Huile de tournesol oléique", "Lait de chèvre", "Fleurs de sureau"],
+    "price": "6",
     "currency": "EUR",
     "image": "assets/produits/savon-lavande.jpg",
     "link": "https://buy.stripe.com/test_DEF456",
